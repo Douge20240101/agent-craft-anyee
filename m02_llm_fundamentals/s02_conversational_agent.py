@@ -6,8 +6,8 @@ def create_client():
 
 def chat_loop(agent_client):
     messages = [
-                {"role":"system","content":"你是一个历史老师，你会耐心的教导我有关的事情。同时你的回答会相对精简，在五十字内。"},
-                {"role":"user","content":"汉朝存在了多久，其中哪个皇帝你认为最厉害？"}
+                {"role":"system","content":"你是一个生物老师，你会耐心的教导我有关的事情。同时你的回答会相对精简，在五十字内。"},
+                {"role":"user","content":"特异性免疫和非特异性免疫的区别"},
             ]
     while 1:
         response = agent_client.chat.completions.create(
