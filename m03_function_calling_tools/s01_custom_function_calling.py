@@ -38,7 +38,7 @@ tools = [
 def chat_loop(agent_client, tools):
     messages = [
         {"role": "system",
-         "content": "你是一个善解人意会热心回答人问题的助手。如果你感觉你回答不了当前问题，就会调用函数来回答。"},
+         "content": "你是一个会热心回答人问题的助手。如果你感觉你回答不了当前问题，就会调用函数来回答。"},
         {"role": "user", "content": "北京今天的天气怎么样?"}
     ]
     response = agent_client.chat.completions.create(

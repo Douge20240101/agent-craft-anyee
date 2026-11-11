@@ -9,5 +9,6 @@ llm = ChatOpenAI(
 )
 
 # 调用模型
-response = llm.invoke('你好喵')
-print(response.content)
+response = llm.stream('你好喵')
+for chunk in response:
+    print(chunk.content,end='')
